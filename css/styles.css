@@ -46,6 +46,14 @@ font-family: Roboto, sans-serif;
 font-weight: 500;
 line-height: 1.5;
 letter-spacing: 0.04em;
+border-radius: 8px;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+display: inline-flex;
+    padding: 16px 32px;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 48px auto;
+    display: block;
 
 }
 
@@ -59,21 +67,34 @@ background-color: #404BBF;
 .nav-address .nav-address-mail:focus,
 .nav-address .nav-address-mail:active {
     color: #404BBF;
+    
 }
 
 .nav-address .nav-address-mail {
     color: #434455;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
 ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list-advantages {
+display: flex;
+flex-wrap: nowrap;
+padding-top: 120px;
+padding-bottom: 120px;
+gap: 24px;
 }
 
 .section-one {
 
     background-color: #2E2F42;
+    padding: 188px 292px;
 }
 
 .section-one-title {
@@ -84,6 +105,8 @@ ul {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 1.12px;
+    max-width: 496px;
+   margin: 0 auto;
 }
 
 .advatages {
@@ -100,6 +123,7 @@ font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+
 }
 
 .section-two-title {
@@ -110,11 +134,21 @@ font-weight: 700;
 line-height: 1.11;
 letter-spacing: 0.72px;
 text-transform: capitalize;
+padding-top: 120px;
+padding-bottom: 120px;
 }
 
 .section-two {
 
     background-color: #F4F4FD;
+}
+
+.team {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+    width: calc((100% - 72px) / 4);
+    padding-bottom: 120px;
 }
 
 .team-list {
@@ -128,6 +162,9 @@ text-transform: capitalize;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 8px;
 
 }
 
@@ -136,6 +173,8 @@ text-transform: capitalize;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    text-align: center;
+    padding-bottom: 32px;
 
 }
 
@@ -148,6 +187,14 @@ text-transform: capitalize;
     letter-spacing: 0.72px;
     text-transform: capitalize;
     line-height: 1.11;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
 }
 
 
@@ -158,6 +205,8 @@ font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding-top: 32px;
+    padding-bottom: 8px;
 
 }
 
@@ -167,6 +216,7 @@ font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    padding-bottom: 32px;
 
 }
 
@@ -208,4 +258,54 @@ color: #F4F4FD;
 .address {
     font-style: normal;
 }
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container {
+width: 1158px;
+margin: 0 auto;
+
+}
+
+.page-header {
+    background-color: #FFF;
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.page-header .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-address {
+    display: flex;
+    gap: 40px;
+}
+
+.page-header .navigation {
+display: flex;
+    gap: 40px;
+    padding-left: 156px;
+}
+
+.name-company-link {
+    display: flex;
+    gap: 0;
+}
+
+img {
+    display: block;
+}
+
+
 
