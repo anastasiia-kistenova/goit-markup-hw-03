@@ -7,6 +7,7 @@
         letter-spacing: 0.54px;
         text-transform: uppercase;
         text-decoration: none;
+        
 }
 
 .name-company {
@@ -35,6 +36,58 @@
     line-height: 24px;
     letter-spacing: 0.32px;
     text-decoration: none;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.page-header {
+    background-color: #FFF;
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.page-header .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    
+}
+
+.page-header .name-company-link {
+    margin-right: 76px;
+}
+
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+    
+}
+
+.nav-address {
+    display: flex;
+    gap: 40px;
+}
+
+.page-header .navigation {
+    display: flex;
+    gap: 40px;
+    padding-left: 156px;
+}
+
+.name-company-link {
+    display: flex;
+    gap: 0;
+}
+
+img {
+    display: block;
 }
 
 .button-order {
@@ -54,6 +107,10 @@ display: inline-flex;
     gap: 10px;
     margin: 48px auto;
     display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
 
 }
 
@@ -94,7 +151,8 @@ gap: 24px;
 .section-one {
 
     background-color: #2E2F42;
-    padding: 188px 292px;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .section-one-title {
@@ -109,12 +167,26 @@ gap: 24px;
    margin: 0 auto;
 }
 
+.advatages-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.visually-hidden {
+visibility: hidden;
+}
+
+.item-advantages {
+    width: calc((100% - 72px) / 4);
+}
+
 .advatages {
 font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .advatages-text {
@@ -134,26 +206,32 @@ font-weight: 700;
 line-height: 1.11;
 letter-spacing: 0.72px;
 text-transform: capitalize;
-padding-top: 120px;
-padding-bottom: 120px;
+margin-bottom: 72px;
 }
 
 .section-two {
-
+    padding-top: 120px;
+    padding-bottom: 120px;
     background-color: #F4F4FD;
+}
+
+.team-member {
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .team {
     display: flex;
-    flex-wrap: nowrap;
     gap: 24px;
-    width: calc((100% - 72px) / 4);
-    padding-bottom: 120px;
+    padding: 0;
+    margin: 120px;
 }
 
 .team-list {
 
     background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-name {
@@ -163,8 +241,7 @@ padding-bottom: 120px;
     letter-spacing: 0.02em;
     color: #2e2f42;
     text-align: center;
-    padding-top: 32px;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 
 }
 
@@ -178,6 +255,11 @@ padding-bottom: 120px;
 
 }
 
+.section-three {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 .section-three-title {
 
     color: #2E2F42;
@@ -187,16 +269,19 @@ padding-bottom: 120px;
     letter-spacing: 0.72px;
     text-transform: capitalize;
     line-height: 1.11;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    margin-bottom: 72px;
 }
 
 .product-list {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    row-gap: 48px;
 }
 
+.product-item {
+    width: calc((100% - 48px) / 3);
+}
 
 .product-name {
 
@@ -205,9 +290,14 @@ font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    padding-top: 32px;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 
+}
+
+.our-products {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 .product {
@@ -216,7 +306,6 @@ font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    padding-bottom: 32px;
 
 }
 
@@ -232,6 +321,8 @@ font-size: 16px;
 .down-page {
 
     background-color: #2E2F42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 
 }
 
@@ -246,7 +337,18 @@ color: #F4F4FD;
     text-decoration: none;
 }
 
-
+.name-company-link-down {
+display: inline-block;
+ margin-bottom: 16px;
+color: #4D5AE5;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
 
 
 .main-text {
@@ -267,45 +369,12 @@ h1, h2, h3, h4, h5, h6, p {
 .container {
 width: 1158px;
 margin: 0 auto;
+padding-left: 15px;
+padding-right: 15px;
 
 }
 
-.page-header {
-    background-color: #FFF;
-    border-bottom: 1px solid #E7E9FC;
-}
 
-.page-header .container {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-
-.nav-links {
-    display: flex;
-    gap: 40px;
-}
-
-.nav-address {
-    display: flex;
-    gap: 40px;
-}
-
-.page-header .navigation {
-display: flex;
-    gap: 40px;
-    padding-left: 156px;
-}
-
-.name-company-link {
-    display: flex;
-    gap: 0;
-}
-
-img {
-    display: block;
-}
 
 
 
